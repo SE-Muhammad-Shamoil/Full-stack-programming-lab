@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 07 – Drag-and-Drop Sortable List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔀 Drag-and-Drop Sorter</h1>
+    <p class="subtitle">Drag items to reorder — order updates dynamically</p>
+
+    <div class="list-wrapper">
+      <ul id="sortable-list">
+        <li class="sort-item" draggable="true" data-id="1">
+          <span class="handle">⠿</span>
+          <span class="item-label">🚀 Task Alpha</span>
+          <span class="badge" id="badge-1">1</span>
+        </li>
+        <li class="sort-item" draggable="true" data-id="2">
+          <span class="handle">⠿</span>
+          <span class="item-label">🎯 Task Beta</span>
+          <span class="badge" id="badge-2">2</span>
+        </li>
+        <li class="sort-item" draggable="true" data-id="3">
+          <span class="handle">⠿</span>
+          <span class="item-label">💡 Task Gamma</span>
+          <span class="badge" id="badge-3">3</span>
+        </li>
+        <li class="sort-item" draggable="true" data-id="4">
+          <span class="handle">⠿</span>
+          <span class="item-label">🔥 Task Delta</span>
+          <span class="badge" id="badge-4">4</span>
+        </li>
+        <li class="sort-item" draggable="true" data-id="5">
+          <span class="handle">⠿</span>
+          <span class="item-label">⚡ Task Epsilon</span>
+          <span class="badge" id="badge-5">5</span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="order-display">
+      <h3>Current Order:</h3>
+      <p id="order-text"></p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

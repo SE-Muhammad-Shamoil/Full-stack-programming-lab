@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 05 – Chained Style Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Chained Style Editor</h1>
+    <p class="subtitle">Use the controls below to style the text using jQuery chaining</p>
+
+    <div id="text-box">
+      The quick brown fox jumps over the lazy dog. jQuery chaining makes this styling seamless and elegant!
+    </div>
+
+    <div class="controls">
+      <div class="control-group">
+        <h3>Font Size</h3>
+        <div class="btn-row">
+          <button class="ctrl-btn" id="size-sm">Small</button>
+          <button class="ctrl-btn" id="size-md">Medium</button>
+          <button class="ctrl-btn" id="size-lg">Large</button>
+          <button class="ctrl-btn" id="size-xl">X-Large</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h3>Text Color</h3>
+        <div class="btn-row">
+          <button class="ctrl-btn color-btn" id="color-white" style="background:#FFFFFF; color:#111;">White</button>
+          <button class="ctrl-btn color-btn" id="color-cyan" style="background:#00d4ff; color:#111;">Cyan</button>
+          <button class="ctrl-btn color-btn" id="color-pink" style="background:#ff6ec7; color:#fff;">Pink</button>
+          <button class="ctrl-btn color-btn" id="color-gold" style="background:#ffd700; color:#111;">Gold</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h3>Background Color</h3>
+        <div class="btn-row">
+          <button class="ctrl-btn" id="bg-dark">Dark</button>
+          <button class="ctrl-btn" id="bg-blue">Blue</button>
+          <button class="ctrl-btn" id="bg-purple">Purple</button>
+          <button class="ctrl-btn" id="bg-green">Green</button>
+        </div>
+      </div>
+
+      <div class="control-group">
+        <h3>Style Toggle</h3>
+        <div class="btn-row">
+          <button class="ctrl-btn" id="toggle-bold">Bold</button>
+          <button class="ctrl-btn" id="toggle-italic">Italic</button>
+          <button class="ctrl-btn" id="reset-all">Reset All</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

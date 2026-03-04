@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 03 – Interactive Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>✅ Interactive Form Validation</h1>
+    <p class="subtitle">Fill out the form below – we validate as you type</p>
+
+    <form id="reg-form" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="John Doe" />
+        <span class="error-msg" id="name-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="john@example.com" />
+        <span class="error-msg" id="email-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Min 6 characters" />
+        <span class="error-msg" id="password-error"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" placeholder="Repeat password" />
+        <span class="error-msg" id="confirm-error"></span>
+      </div>
+
+      <button type="submit" id="submit-btn">Register</button>
+    </form>
+
+    <div id="success-msg" class="hidden">
+      🎉 Registration Successful! Welcome aboard!
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

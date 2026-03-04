@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 04 – Tabbed Content with Smooth Scroll</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📑 Tabbed Content Explorer</h1>
+    <p class="subtitle">Click a tab to explore — smooth scroll included</p>
+
+    <nav class="tab-nav">
+      <button class="tab-btn active" data-tab="home">🏠 Home</button>
+      <button class="tab-btn" data-tab="about">ℹ️ About</button>
+      <button class="tab-btn" data-tab="services">🛠 Services</button>
+      <button class="tab-btn" data-tab="portfolio">💼 Portfolio</button>
+      <button class="tab-btn" data-tab="contact">📬 Contact</button>
+    </nav>
+
+    <div class="tab-content-wrapper">
+      <div class="tab-panel active" id="home">
+        <h2>Welcome Home!</h2>
+        <p>This is the home section of our tabbed interface. jQuery powers the smooth switching between panels, animating the content in with a fade for a polished user experience.</p>
+        <ul><li>Fast navigation</li><li>Animated transitions</li><li>Smooth scrolling</li></ul>
+      </div>
+      <div class="tab-panel" id="about">
+        <h2>About Us</h2>
+        <p>We are a passionate team building interactive web interfaces. This demo showcases jQuery's DOM manipulation capabilities combined with smooth CSS transitions and event handling.</p>
+        <p>Each tab panel is independently managed and animated into view when selected.</p>
+      </div>
+      <div class="tab-panel" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+          <div class="card">🌐 Web Design</div>
+          <div class="card">⚙️ Development</div>
+          <div class="card">📊 Analytics</div>
+          <div class="card">🔒 Security</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Explore our featured projects showcasing the breadth of our technical expertise and creative design work.</p>
+        <div class="portfolio-grid">
+          <div class="p-item">Project Alpha</div>
+          <div class="p-item">Project Beta</div>
+          <div class="p-item">Project Gamma</div>
+        </div>
+      </div>
+      <div class="tab-panel" id="contact">
+        <h2>Contact Us</h2>
+        <p>📧 hello@example.com</p>
+        <p>📞 +1 (555) 000-0000</p>
+        <p>📍 123 jQuery Lane, WebCity, 00001</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 06 – API Data Fetcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 API Data Fetcher</h1>
+    <p class="subtitle">Fetching posts from JSONPlaceholder using jQuery Ajax</p>
+
+    <div class="stats-bar">
+      <span>Posts loaded: <strong id="post-count">0</strong></span>
+      <span id="loader" class="hidden">⏳ Loading...</span>
+    </div>
+
+    <div id="posts-container"></div>
+
+    <div class="btn-center">
+      <button id="load-more-btn">Load More Posts</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
