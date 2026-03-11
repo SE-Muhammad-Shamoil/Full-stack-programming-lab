@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - HotSpring Portable Spas</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<div class="page-wrapper">
+  
+  <div class="topbar">
+    <div class="support">Call for Customer support: <a href="tel:02038989565">020 38989565</a></div>
+    <div class="topbar-links">
+      <a href="account.html">My Account</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="checkout.html">To Checkout</a>
+    </div>
+  </div>
+  
+  <header class="site-header">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="HotSpring Portable Spas"></a></div>
+    <div class="header-right">
+      <div class="cart-widget">
+        <span class="cart-icon">&#128722;</span>
+        <div class="cart-label">
+          <span>My Cart: </span><strong id="cart-count">0 Items</strong>
+          <select onchange="this.selectedIndex=0">
+            <option>View Cart</option>
+            <option>Checkout</option>
+          </select>
+        </div>
+      </div>
+      <nav class="main-nav"><a href="index.html" class="">HOME</a><a href="category.html" class="active">PRODUCTS</a><a href="category.html" class="">SPECIAL OFFERS</a><a href="contact.html" class="">CUSTOMER SERVICE</a></nav>
+    </div>
+  </header>
+  
+  <div class="search-bar">
+    <nav class="sub-nav">
+      <a href="category.html">CATAGORY</a>
+      <a href="category.html">BRAND</a>
+      <a href="about.html">INFO</a>
+    </nav>
+    <form class="search-form" onsubmit="return false;">
+      <input type="text" id="search-input" placeholder="Search" autocomplete="off">
+      <button type="submit">SEARCH</button>
+    </form>
+  </div>
+  
+  <div class="breadcrumb-bar"><a href="index.html">Home</a> <span class="sep">&rsaquo;</span> <a href="category.html">Catagory</a> <span class="sep">&rsaquo;</span> <span>Product</span></div>
+  <div class="main-content">
+    <div class="product-detail-title">
+      Emerald Bay XL TV DVD Stereo Hot Tub with 90 Jets
+      <div class="prod-sku">Abt Model:B22CS30SNS5 | UPC Code : B22CS30BN723</div>
+    </div>
+    <div class="product-detail-body">
+      <div class="prod-gallery">
+        <div class="main-img"><img id="mainProductImg" src="images/product_main.jpg" alt="Product Main"></div>
+        <div class="zoom-label">Roll over image to zoom in</div>
+        <div class="thumbs"><img src="images/product_thumb_1.jpg" alt="View 1" onclick="setMainImg(1)"><img src="images/product_thumb_2.jpg" alt="View 2" onclick="setMainImg(2)"><img src="images/product_thumb_3.jpg" alt="View 3" onclick="setMainImg(3)"><img src="images/product_thumb_4.jpg" alt="View 4" onclick="setMainImg(4)"></div>
+        <div class="larger-view"><a href="#">+ Larger View</a></div>
+      </div>
+      <div class="prod-info">
+        <div class="prod-rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span>44</span>
+          <a href="#">(14 reviews)</a>
+        </div>
+        <div class="price-retail">Retail Price:$2199.00</div>
+        <div class="price-retail"><strong>Sale price</strong></div>
+        <div class="price-sale">$1,979.00</div>
+        <div class="price-guarantee">Low Price Guarantee</div>
+        <div class="prod-specs">
+          <strong>Size/Seating Capacity</strong><br>
+          77", 77", 32" / 6 Persons<br>
+          <strong>Seating Design</strong><br>
+          Bucket, Lounge, Chair, Bench<br>
+          <strong>Water Capacity / Dry Weight</strong><br>
+          305 Gallons / 573 lbs<br>
+          <strong>Number of Pumps</strong><br>
+          2 X 5HP<br>
+          <strong>Electrical</strong><br>
+          5.5 KW Heavy Heater, 220V, 50 amp /ETL Certificate
+        </div>
+        <div class="stock">In Stock (available)</div>
+        <button class="btn-add-cart-lg" id="addToCartBtn">&#10010; ADD TO CART</button>
+      </div>
+      <div class="price-calc">
+        <h4>Price Calculator</h4>
+        <div class="calc-row"><label>Interior Color</label><select><option>—</option></select></div><div class="calc-row"><label>Outside Shell Color</label><select><option>—</option></select></div><div class="calc-row"><label>Circulation Pump</label><select><option>—</option></select></div><div class="calc-row"><label>Polar Foam</label><select><option>—</option></select></div><div class="calc-row"><label>Cover / Steps</label><select><option>—</option></select></div><div class="calc-row"><label>Extra Filter Sets</label><select><option>—</option></select></div><div class="calc-row"><label>Deluxe Cover Lifter</label><select><option>—</option></select></div><div class="calc-row"><label>Salt Water Sanitation System</label><select><option>—</option></select></div><div class="calc-row"><label>TV/DVD/Entertainment</label><select><option>—</option></select></div><div class="calc-row"><label>Backyard Delivery</label><select><option>—</option></select></div><div class="calc-row"><label>Jets</label><select><option>—</option></select></div><div class="calc-row"><label>Perimeter Lighting</label><select><option>—</option></select></div><div class="calc-row"><label>Premium Popup Speakers</label><select><option>—</option></select></div><div class="calc-row"><label>Waterfall</label><select><option>—</option></select></div><div class="calc-row"><label>Spa Surround</label><select><option>—</option></select></div><div class="calc-row"><label>Quantity</label><select><option>—</option></select></div>
+        <div class="total-price">Total Price: <span id="calcTotal">$650.00</span></div>
+        <button class="btn-add-cart-lg" style="font-size:11px;padding:6px 10px;">&#10010; ADD TO CART</button>
+        <div class="download-resources">
+          <h5>Download Resources</h5>
+          <a href="#">Full Line Brochure</a>
+          <a href="#">Owner's Manual</a>
+          <a href="#">Specifications Sheet</a>
+        </div>
+      </div>
+    </div>
+    <div class="prod-tabs">
+      <div class="tabs-nav">
+        <a href="#" class="active" onclick="showTab('details',this);return false;">Details</a>
+        <a href="#" onclick="showTab('specs',this);return false;">Quick Specs</a>
+        <a href="#" onclick="showTab('accessories',this);return false;">Accessories</a>
+        <a href="#" onclick="showTab('reviews',this);return false;">Reviews</a>
+        <a href="#" onclick="showTab('qa',this);return false;">Q &amp; A</a>
+      </div>
+      <div class="tab-content" id="tab-details">
+        <h5>Product Details</h5>
+        <p>Energy Star Rated - No</p>
+        <h5>Emerald Bay XL TV DVD Stereo Hot Tub with 90 Jets</h5>
+        <p>The Hottub B22CS30SNS stain</p>
+        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit, Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+      </div>
+      <div class="tab-content" id="tab-specs" style="display:none">
+        <table style="font-size:11px;width:100%;border-collapse:collapse">
+          <tr><td style="padding:4px;border:1px solid #ddd;"><strong>Size</strong></td><td style="padding:4px;border:1px solid #ddd;">77" x 77" x 32"</td></tr>
+          <tr><td style="padding:4px;border:1px solid #ddd;"><strong>Seats</strong></td><td style="padding:4px;border:1px solid #ddd;">6 Persons</td></tr>
+          <tr><td style="padding:4px;border:1px solid #ddd;"><strong>Jets</strong></td><td style="padding:4px;border:1px solid #ddd;">90</td></tr>
+          <tr><td style="padding:4px;border:1px solid #ddd;"><strong>Heater</strong></td><td style="padding:4px;border:1px solid #ddd;">5.5 KW</td></tr>
+        </table>
+      </div>
+      <div class="tab-content" id="tab-accessories" style="display:none"><p>No accessories listed.</p></div>
+      <div class="tab-content" id="tab-reviews" style="display:none"><p>14 verified customer reviews — ★★★★★ average.</p></div>
+      <div class="tab-content" id="tab-qa" style="display:none"><p>Have a question? <a href="contact.html">Ask us</a></p></div>
+    </div>
+    
+  <div class="also-viewed">
+    <h4>Customers Who &nbsp;Viewed This Item Also</h4>
+    <div class="also-viewed-carousel">
+      <span class="av-arrow">&lsaquo;</span>
+      <div class="av-items">
+      <div class="av-item">
+        <img src="images/related_1.jpg" alt="Related product">
+        <div class="av-item-info">
+          <div class="av-price">$2,549.15</div>
+          <div class="av-title">Bosch 22 Cu. Ft Stainless Refrigerator</div>
+          <div class="av-model">B22CS30SNS5</div>
+        </div>
+      </div>
+      <div class="av-item">
+        <img src="images/related_2.jpg" alt="Related product">
+        <div class="av-item-info">
+          <div class="av-price">$2,549.15</div>
+          <div class="av-title">Bosch 22 Cu. Ft Stainless Refrigerator</div>
+          <div class="av-model">B22CS30SNS5</div>
+        </div>
+      </div>
+      <div class="av-item">
+        <img src="images/related_3.jpg" alt="Related product">
+        <div class="av-item-info">
+          <div class="av-price">$2,549.15</div>
+          <div class="av-title">Bosch 22 Cu. Ft Stainless Refrigerator</div>
+          <div class="av-model">B22CS30SNS5</div>
+        </div>
+      </div>
+      <div class="av-item">
+        <img src="images/related_4.jpg" alt="Related product">
+        <div class="av-item-info">
+          <div class="av-price">$2,549.15</div>
+          <div class="av-title">Bosch 22 Cu. Ft Stainless Refrigerator</div>
+          <div class="av-model">B22CS30SNS5</div>
+        </div>
+      </div></div>
+      <span class="av-arrow">&rsaquo;</span>
+    </div>
+  </div>
+    
+  <div class="brand-logos">
+    <img src="images/brand_logos.jpg" alt="Brand logos - Oceanic Spa, Caldera Spas, Island Spas">
+  </div>
+  </div>
+  
+  <div class="footer-top"></div>
+  <footer class="site-footer">
+    <div class="page-wrapper">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <address>
+            yoursite name.com<br>
+            <span class="phone">CALL 24/7:  888 - 201 - 8899</span><br>
+            Your Address:<br>
+            Street<br>
+            State &amp; Zip Code<br>
+            City &amp; Country<br>
+            Email: servicemail@yoursitename.com
+          </address>
+          <div class="social-links mt-8">
+            <a href="#" class="tw">t</a>
+            <a href="#" class="fb">f</a>
+            <a href="#" class="li">in</a>
+            <a href="#" class="gp">g+</a>
+            <a href="#" class="yt">&#9654;</a>
+            <a href="#" class="pi">P</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Customer Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Site Map</a>
+          <a href="#">Search Terms</a>
+          <a href="contact.html">Conatact Us</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-col">
+          <h5>My Account</h5>
+          <a href="login.html">Sign In</a>
+          <a href="cart.html">View Cart</a>
+          <a href="#">My Wishlist</a>
+        </div>
+        <div class="footer-col">
+          <h5>Signup for a Newsletter</h5>
+          <p>Sign up for our news letter:</p>
+          <form class="footer-newsletter" onsubmit="return subscribeNewsletter(this);">
+            <input type="email" placeholder="Your email">
+            <button type="submit">GO</button>
+          </form>
+          <p class="mt-8" style="font-size:10px;color:#aaa;">Payment Solutions</p>
+          <div class="payment-logos">
+            <span class="pay-logo">VISA</span>
+            <span class="pay-logo">MC</span>
+            <span class="pay-logo">AMEX</span>
+            <span class="pay-logo">PP</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2014 Hottubspaservice.com. All Rights Reserved.</div>
+    </div>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

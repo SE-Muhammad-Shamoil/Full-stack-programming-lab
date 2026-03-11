@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - HotSpring Portable Spas</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<div class="page-wrapper">
+  
+  <div class="topbar">
+    <div class="support">Call for Customer support: <a href="tel:02038989565">020 38989565</a></div>
+    <div class="topbar-links">
+      <a href="account.html">My Account</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="checkout.html">To Checkout</a>
+    </div>
+  </div>
+  
+  <header class="site-header">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="HotSpring Portable Spas"></a></div>
+    <div class="header-right">
+      <div class="cart-widget">
+        <span class="cart-icon">&#128722;</span>
+        <div class="cart-label">
+          <span>My Cart: </span><strong id="cart-count">0 Items</strong>
+          <select onchange="this.selectedIndex=0">
+            <option>View Cart</option>
+            <option>Checkout</option>
+          </select>
+        </div>
+      </div>
+      <nav class="main-nav"><a href="index.html" class="active">HOME</a><a href="category.html" class="">PRODUCTS</a><a href="category.html" class="">SPECIAL OFFERS</a><a href="contact.html" class="">CUSTOMER SERVICE</a></nav>
+    </div>
+  </header>
+  
+  <div class="search-bar">
+    <nav class="sub-nav">
+      <a href="category.html">CATAGORY</a>
+      <a href="category.html">BRAND</a>
+      <a href="about.html">INFO</a>
+    </nav>
+    <form class="search-form" onsubmit="return false;">
+      <input type="text" id="search-input" placeholder="Search" autocomplete="off">
+      <button type="submit">SEARCH</button>
+    </form>
+  </div>
+  
+  <div class="breadcrumb-bar"><a href="index.html">Home</a> <span class="sep">&rsaquo;</span> <span>Contact Us</span></div>
+  <div class="main-content">
+    <div class="contact-section">
+      <h3>Contact Us</h3>
+      <form id="contactForm" class="full-width-form" onsubmit="return handleContact(event);">
+        <div class="form-row">
+          <label>Full Name <span class="req">*</span></label>
+          <input type="text" name="name" required minlength="3">
+        </div>
+        <div class="form-row">
+          <label>Email <span class="req">*</span></label>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label>Phone</label>
+          <input type="tel" name="phone">
+        </div>
+        <div class="form-row">
+          <label>Subject <span class="req">*</span></label>
+          <input type="text" name="subject" required>
+        </div>
+        <div class="form-row">
+          <label>Message <span class="req">*</span></label>
+          <textarea name="message" required minlength="10"></textarea>
+        </div>
+        <div style="margin-left:118px;margin-top:8px;">
+          <button type="submit" class="btn-signin">SEND MESSAGE</button>
+        </div>
+      </form>
+    </div>
+    
+  <div class="brand-logos">
+    <img src="images/brand_logos.jpg" alt="Brand logos - Oceanic Spa, Caldera Spas, Island Spas">
+  </div>
+  </div>
+  
+  <div class="footer-top"></div>
+  <footer class="site-footer">
+    <div class="page-wrapper">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <address>
+            yoursite name.com<br>
+            <span class="phone">CALL 24/7:  888 - 201 - 8899</span><br>
+            Your Address:<br>
+            Street<br>
+            State &amp; Zip Code<br>
+            City &amp; Country<br>
+            Email: servicemail@yoursitename.com
+          </address>
+          <div class="social-links mt-8">
+            <a href="#" class="tw">t</a>
+            <a href="#" class="fb">f</a>
+            <a href="#" class="li">in</a>
+            <a href="#" class="gp">g+</a>
+            <a href="#" class="yt">&#9654;</a>
+            <a href="#" class="pi">P</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Customer Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Site Map</a>
+          <a href="#">Search Terms</a>
+          <a href="contact.html">Conatact Us</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-col">
+          <h5>My Account</h5>
+          <a href="login.html">Sign In</a>
+          <a href="cart.html">View Cart</a>
+          <a href="#">My Wishlist</a>
+        </div>
+        <div class="footer-col">
+          <h5>Signup for a Newsletter</h5>
+          <p>Sign up for our news letter:</p>
+          <form class="footer-newsletter" onsubmit="return subscribeNewsletter(this);">
+            <input type="email" placeholder="Your email">
+            <button type="submit">GO</button>
+          </form>
+          <p class="mt-8" style="font-size:10px;color:#aaa;">Payment Solutions</p>
+          <div class="payment-logos">
+            <span class="pay-logo">VISA</span>
+            <span class="pay-logo">MC</span>
+            <span class="pay-logo">AMEX</span>
+            <span class="pay-logo">PP</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2014 Hottubspaservice.com. All Rights Reserved.</div>
+    </div>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

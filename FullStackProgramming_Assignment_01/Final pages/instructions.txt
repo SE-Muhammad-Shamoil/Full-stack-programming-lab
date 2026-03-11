@@ -1,0 +1,17 @@
+ Convert the provided design files (PSD and JPG in zipped) into HTML pages.
+ Ensure full functionality by converting all the provided pages.
+ Develop a fully responsive website. You may use any CSS framework such as Bootstrap or
+Tailwind CSS.
+ Use JavaScript and jQuery for form validation and interactive animations.
+
+
+Instructions:
+ Standards: Use HTML5, semantic tags, and follow W3C standards.
+ Project Structure: Maintain a proper folder and file organization.
+ Assignment Folder: Create FullStackProgramming_Assignment_01 inside the
+repo.
+ Version Control: Push your work back to GitHub.
+ Submission File: Make a Word or PDF including:
+o Front Page: Make a front page for the assignment.
+o Take Screenshots of outputs and add to word file
+o Add Assignment GitHub repo URL

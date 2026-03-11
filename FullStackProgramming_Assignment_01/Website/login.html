@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login or Create Account - HotSpring Portable Spas</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+<div class="page-wrapper">
+  
+  <div class="topbar">
+    <div class="support">Call for Customer support: <a href="tel:02038989565">020 38989565</a></div>
+    <div class="topbar-links">
+      <a href="account.html">My Account</a>
+      <a href="wishlist.html">Wishlist</a>
+      <a href="checkout.html">To Checkout</a>
+    </div>
+  </div>
+  
+  <header class="site-header">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="HotSpring Portable Spas"></a></div>
+    <div class="header-right">
+      <div class="cart-widget">
+        <span class="cart-icon">&#128722;</span>
+        <div class="cart-label">
+          <span>My Cart: </span><strong id="cart-count">0 Items</strong>
+          <select onchange="this.selectedIndex=0">
+            <option>View Cart</option>
+            <option>Checkout</option>
+          </select>
+        </div>
+      </div>
+      <nav class="main-nav"><a href="index.html" class="active">HOME</a><a href="category.html" class="">PRODUCTS</a><a href="category.html" class="">SPECIAL OFFERS</a><a href="contact.html" class="">CUSTOMER SERVICE</a></nav>
+    </div>
+  </header>
+  
+  <div class="search-bar">
+    <nav class="sub-nav">
+      <a href="category.html">CATAGORY</a>
+      <a href="category.html">BRAND</a>
+      <a href="about.html">INFO</a>
+    </nav>
+    <form class="search-form" onsubmit="return false;">
+      <input type="text" id="search-input" placeholder="Search" autocomplete="off">
+      <button type="submit">SEARCH</button>
+    </form>
+  </div>
+  
+  <div class="breadcrumb-bar"><a href="index.html">Home</a> <span class="sep">&rsaquo;</span> <span>My Account</span></div>
+  <div class="main-content">
+    <div class="login-page-title">Login Or Creat Account</div>
+    <div class="login-columns">
+      <div class="login-col-left">
+        <h4>User Login Details</h4>
+        <p>Please sign in below with your login information.</p>
+        <p>*Required Fields</p>
+        <form id="loginForm" onsubmit="return handleLogin(event);">
+          <div class="form-row">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" id="loginEmail" name="email" required>
+          </div>
+          <div class="form-row">
+            <label>Password <span class="req">*</span></label>
+            <input type="password" id="loginPassword" name="password" required>
+          </div>
+          <div class="form-check-row">
+            <input type="checkbox" id="rememberMe"> Remember me th next time I visit
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;margin-left:88px;">
+            <button type="submit" class="btn-signin">SIGN IN</button>
+            <a href="forgot-password.html" class="forgot-link">Forgot your password?</a>
+          </div>
+        </form>
+      </div>
+      <div class="login-col-right">
+        <h4>New Customer</h4>
+        <p>As a registered Abt.com customer you can:</p>
+        <ul>
+          <li>Store billing &amp; shipping information</li>
+          <li>Check your order status</li>
+          <li>Track your delivery Status</li>
+          <li>View your order history</li>
+        </ul>
+        <button class="btn-create-acc" onclick="window.location='register.html'">CREATE NEW ACCOUNT</button>
+      </div>
+    </div>
+    
+  <div class="also-viewed">
+    <h4>Customers Who &nbsp;Viewed This Item Also</h4>
+    <div class="also-viewed-carousel">
+      <span class="av-arrow">&lsaquo;</span>
+      <div class="av-items">
+      <div class="av-item">
+        <img src="images/related_1.jpg" alt="Related product">
+        <div class="av-item-info">
+          <div class="av-price">$2,549.15</div>
+          <div class="av-title">Bosch 22 Cu. Ft Stainless Refrigerator</div>
+          <div class="av-model">B22CS30SNS5</div>
+        </div>
+      </div>
+      <div class="av-item">
+        <img src="images/related_2.jpg" alt="Related product">
+        <div class="av-item-info">
+          <div class="av-price">$2,549.15</div>
+          <div class="av-title">Bosch 22 Cu. Ft Stainless Refrigerator</div>
+          <div class="av-model">B22CS30SNS5</div>
+        </div>
+      </div>
+      <div class="av-item">
+        <img src="images/related_3.jpg" alt="Related product">
+        <div class="av-item-info">
+          <div class="av-price">$2,549.15</div>
+          <div class="av-title">Bosch 22 Cu. Ft Stainless Refrigerator</div>
+          <div class="av-model">B22CS30SNS5</div>
+        </div>
+      </div>
+      <div class="av-item">
+        <img src="images/related_4.jpg" alt="Related product">
+        <div class="av-item-info">
+          <div class="av-price">$2,549.15</div>
+          <div class="av-title">Bosch 22 Cu. Ft Stainless Refrigerator</div>
+          <div class="av-model">B22CS30SNS5</div>
+        </div>
+      </div></div>
+      <span class="av-arrow">&rsaquo;</span>
+    </div>
+  </div>
+    
+  <div class="brand-logos">
+    <img src="images/brand_logos.jpg" alt="Brand logos - Oceanic Spa, Caldera Spas, Island Spas">
+  </div>
+  </div>
+  
+  <div class="footer-top"></div>
+  <footer class="site-footer">
+    <div class="page-wrapper">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <address>
+            yoursite name.com<br>
+            <span class="phone">CALL 24/7:  888 - 201 - 8899</span><br>
+            Your Address:<br>
+            Street<br>
+            State &amp; Zip Code<br>
+            City &amp; Country<br>
+            Email: servicemail@yoursitename.com
+          </address>
+          <div class="social-links mt-8">
+            <a href="#" class="tw">t</a>
+            <a href="#" class="fb">f</a>
+            <a href="#" class="li">in</a>
+            <a href="#" class="gp">g+</a>
+            <a href="#" class="yt">&#9654;</a>
+            <a href="#" class="pi">P</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Information</h5>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Customer Service</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Site Map</a>
+          <a href="#">Search Terms</a>
+          <a href="contact.html">Conatact Us</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-col">
+          <h5>My Account</h5>
+          <a href="login.html">Sign In</a>
+          <a href="cart.html">View Cart</a>
+          <a href="#">My Wishlist</a>
+        </div>
+        <div class="footer-col">
+          <h5>Signup for a Newsletter</h5>
+          <p>Sign up for our news letter:</p>
+          <form class="footer-newsletter" onsubmit="return subscribeNewsletter(this);">
+            <input type="email" placeholder="Your email">
+            <button type="submit">GO</button>
+          </form>
+          <p class="mt-8" style="font-size:10px;color:#aaa;">Payment Solutions</p>
+          <div class="payment-logos">
+            <span class="pay-logo">VISA</span>
+            <span class="pay-logo">MC</span>
+            <span class="pay-logo">AMEX</span>
+            <span class="pay-logo">PP</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2014 Hottubspaservice.com. All Rights Reserved.</div>
+    </div>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
