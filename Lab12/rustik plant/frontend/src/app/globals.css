@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #211a16;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-shell {
+  background:
+    radial-gradient(circle at 50% 5%, rgba(255,255,255,.95), rgba(233,233,231,.5) 22%, transparent 42%),
+    linear-gradient(90deg, #ddd 0, #fff 18%, #fff 82%, #ddd 100%);
+}
+
+.container-rustik {
+  width: min(100%, 1010px);
+  margin: 0 auto;
+  padding-inline: 18px;
+}
+
+.nav-link {
+  color: #625c56;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+.section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  letter-spacing: .08em;
+  color: #3d3630;
+}
+
+.price {
+  color: #c77735;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.paper-edge {
+  clip-path: polygon(0 4%, 100% 0, 98% 100%, 2% 100%);
+}

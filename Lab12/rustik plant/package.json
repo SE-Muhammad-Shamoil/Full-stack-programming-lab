@@ -1,0 +1,19 @@
+{
+  "name": "rustik-plank-ecommerce",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dynamic Rustik Plank ecommerce application with Next.js, Express, and MongoDB.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\"",
+    "dev:web": "npm --prefix frontend run dev",
+    "dev:api": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "concurrently \"npm --prefix backend start\" \"npm --prefix frontend start\"",
+    "seed": "npm --prefix backend run seed",
+    "assets": "node scripts/extract-assets.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "sharp": "^0.34.3"
+  }
+}

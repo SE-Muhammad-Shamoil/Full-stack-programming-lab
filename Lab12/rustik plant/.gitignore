@@ -1,0 +1,7 @@
+node_modules
+.next
+.env
+backend/.env
+backend/uploads
+frontend/.next
+*.log
