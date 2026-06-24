@@ -2,12 +2,12 @@
 
 import DashboardLayout from '@/components/DashboardLayout';
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import api from '@/lib/api';
 import Link from 'next/link';
 import { useAuth } from '@/contexts/AuthContext';
 
-export default function SearchPage() {
+function SearchResults() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
   const { user } = useAuth();
@@ -56,7 +56,7 @@ export default function SearchPage() {
   }, [query, user]);
 
   return (
-    <DashboardLayout>
+    <>
       <div className="mb-8">
         <h1 className="font-display text-display text-primary">Search Results</h1>
         <p className="font-body-md text-on-surface-variant">Showing results for: <span className="font-bold text-secondary">"{query}"</span></p>
@@ -116,6 +116,20 @@ export default function SearchPage() {
           )}
         </div>
       )}
+    </>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <DashboardLayout>
+      <Suspense fallback={
+        <div className="flex justify-center p-12">
+          <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      }>
+        <SearchResults />
+      </Suspense>
     </DashboardLayout>
   );
 }

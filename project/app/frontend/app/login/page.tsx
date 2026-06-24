@@ -90,9 +90,9 @@ export default function LoginPage() {
                 <label className="font-label-md text-label-md text-on-surface-variant group-focus-within:text-secondary transition-colors" htmlFor="password">
                   Password
                 </label>
-                <a className="text-label-sm font-label-sm text-secondary hover:underline transition-all" href="#">
+                <Link className="text-label-sm font-label-sm text-secondary hover:underline transition-all" href="/forgot-password">
                   Forgot Password?
-                </a>
+                </Link>
               </div>
               <input
                 className="w-full h-12 px-4 rounded-lg border border-outline-variant bg-white text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all duration-200"

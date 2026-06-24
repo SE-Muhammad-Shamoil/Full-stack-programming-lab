@@ -8,7 +8,7 @@ import DashboardLayout from '@/components/DashboardLayout';
 
 export default function PatientDashboard() {
   const { user } = useAuth();
-  const [appointments, setAppointments] = useState([]);
+  const [appointments, setAppointments] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {

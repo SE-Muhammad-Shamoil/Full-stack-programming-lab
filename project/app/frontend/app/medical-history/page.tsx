@@ -17,7 +17,7 @@ export default function MedicalHistoryPage() {
       try {
         const [profileRes, historyRes] = await Promise.all([
           api.get('/patients/me/profile'),
-          api.get(`/treatments/history/${user._id}`)
+          api.get(`/treatments/history/${user?._id}`)
         ]);
         setProfile(profileRes.data);
         setHistory(historyRes.data);
@@ -51,7 +51,7 @@ export default function MedicalHistoryPage() {
   }
 
   // Combine checkups and progress into a single sorted timeline array
-  const timelineItems = [];
+  const timelineItems: any[] = [];
   if (history?.checkups) {
     history.checkups.forEach((c: any) => timelineItems.push({ ...c, type: 'Checkup', dateObj: new Date(c.createdAt) }));
   }
